@@ -1,0 +1,8 @@
+<div *ngFor="let house of hauntedHouses" class="haunted-house">
+  <h3>{{ house.name }}</h3>
+  <p>{{ house.location.city }}</p>
+  <p>{{ house.location.state }}</p>
+  <p>{{ house.location.zip }}</p>
+  <p>{{ house.description }}</p>
+  <img [src]="house.imageUrl" alt="{{ house.name }}" />
+</div>
