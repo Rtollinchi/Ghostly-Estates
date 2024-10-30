@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "haunted-house-finder": {
+    "house-of-haunted-houses": {
       "projectType": "application",
       "schematics": {},
       "root": "",
