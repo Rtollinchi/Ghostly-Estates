@@ -4,7 +4,11 @@
     Location: {{ hauntedHouse.location.city }},
     {{ hauntedHouse.location.state }} {{ hauntedHouse.location.zip }}
   </p>
-  <p>{{ hauntedHouse.description }}</p>
+  <p></p>
   <img [src]="hauntedHouse.imageUrl" alt="{{ hauntedHouse.name }}" />
+  <div *ngIf="houseHistory">
+    <h3>Historical Details</h3>
+    <p>{{ houseHistory }}</p>
+  </div>
   <button routerLink="/">Back to List</button>
 </div>

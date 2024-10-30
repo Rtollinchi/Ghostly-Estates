@@ -199,6 +199,48 @@ export class HauntedHouseService {
     },
   ];
 
+  private hauntedHouseHistory: { [key: number]: string } = {
+    1: 'Located in Amityville, New York, this house became infamous after Ronald DeFeo Jr. murdered six of his family members in 1974. A year later, the Lutz family moved in and experienced intense paranormal events, including strange noises, ghostly apparitions, and even physical attacks. The terrifying events in the house inspired the book The Amityville Horror and multiple movies.',
+
+    2: "Nestled in Estes Park, Colorado, the Stanley Hotel is famous for inspiring Stephen King's The Shining. Built in 1909, the hotel is haunted by various spirits, including its original owner, F.O. Stanley, and his wife, Flora, who reportedly plays the piano at night. Guests and staff have experienced ghostly figures, laughter, and footsteps in the halls.",
+
+    3: 'This architectural marvel in San Jose, California, was built by Sarah Winchester, the widow of the rifle magnate. Believing she was haunted by the spirits of those killed by Winchester rifles, she added bizarre elements like staircases to nowhere and hidden rooms to confuse the ghosts. Visitors frequently report eerie encounters and disembodied voices.',
+
+    4: 'Located in St. Francisville, Louisiana, this historic plantation is rumored to be haunted by Chloe, an enslaved woman who allegedly poisoned the owner’s family. The plantation is also haunted by the spirits of children who died there, with guests reporting apparitions, ghostly sounds, and phantom footsteps.',
+
+    5: 'Once a notorious prison in Philadelphia, Pennsylvania, Eastern State housed some of America’s most hardened criminals in isolation. The harsh conditions left many inmates mentally broken, and their tortured spirits are said to linger. Visitors report eerie whispers, shadowy figures, and a feeling of dread as they walk through the cellblocks.',
+
+    6: 'A retired ocean liner docked in Long Beach, California, the Queen Mary is known for tragic deaths, including a young girl who drowned in the pool. The ship’s dark history includes fatal accidents and wartime service, and visitors claim to see ghosts of crew members and passengers, as well as hear unexplained footsteps.',
+
+    7: 'This former tuberculosis hospital in Louisville, Kentucky, is often considered one of the most haunted locations in the U.S. Thousands of patients died there, many of them wheeled down the “death chute” to avoid public view. Visitors report apparitions, chilling whispers, and shadow figures wandering the corridors.',
+
+    8: 'Near Adams, Tennessee, the Bell Witch legend began in the early 1800s when the Bell family was allegedly tormented by a spirit known as "Kate." The ghost inflicted physical attacks, and mysterious voices were heard. Today, the cave and property are said to be haunted, with reports of ghostly whispers and moving shadows.',
+
+    9: 'This mansion in St. Louis, Missouri, was home to the Lemp family, who ran a successful brewery but suffered many personal tragedies. Several family members took their own lives in the home, and today, their spirits reportedly haunt the halls, with sightings of apparitions, strange sounds, and cold spots.',
+
+    10: 'In Fall River, Massachusetts, this house was the site of the brutal 1892 axe murders of Andrew and Abby Borden. Although their daughter, Lizzie, was acquitted, the mystery lingers. Guests report hearing footsteps, voices, and even seeing apparitions, believed to be the spirits of the murdered Bordens.',
+
+    11: 'Built in 1874, this lighthouse in St. Augustine, Florida, is known for paranormal activity attributed to past keepers and their families. Two young girls drowned on the property, and their spirits are said to linger. Visitors report hearing children’s laughter and spotting ghostly figures on the stairs.',
+
+    12: 'This small house in Villisca, Iowa, was the site of a gruesome 1912 unsolved murder, where six children and two adults were killed with an axe. Visitors often report seeing apparitions of children, hearing whispers, and feeling an unshakable sense of dread.',
+
+    13: 'Located in Gettysburg, Pennsylvania, this inn served as a hospital during the Civil War, and ghostly soldiers are said to still roam the halls. Guests report hearing footsteps, seeing shadowy figures, and experiencing the cold touch of ghostly hands.',
+
+    14: 'Built on former gallows in San Diego, California, the Whaley House is haunted by Thomas Whaley, his family, and the spirits of executed criminals. Visitors report eerie apparitions, footsteps, and disembodied voices throughout the historic home.',
+
+    15: 'Known for ghostly phenomena, this cemetery in Midlothian, Illinois, has apparitions of a woman in white, ghostly cars that vanish, and strange lights. Paranormal investigators often visit to capture evidence of the unexplained activity reported here.',
+
+    16: 'In New Orleans, Louisiana, this mansion was once home to Madame LaLaurie, infamous for her cruel treatment of enslaved people. After a fire exposed her horrific acts, the building became haunted by those who suffered. Reports include ghostly screams, apparitions, and cold spots.',
+
+    17: 'This historic jail in Charleston, South Carolina, held infamous criminals and housed many tragedies. Visitors report encounters with the spirits of former inmates and hearing ghostly chains rattling, especially in the cells and hallways.',
+
+    18: 'Known as “America’s most haunted hotel,” this historic Eureka Springs, Arkansas, hotel was once a hospital run by a fraudulent doctor. Many patients died, and their spirits reportedly linger, with visitors witnessing apparitions, lights flickering, and hearing disembodied voices.',
+
+    19: 'Built in Mansfield, Ohio, this reformatory was known for its brutal conditions and prisoner deaths. Ghostly figures and strange noises are often reported by visitors, especially in solitary confinement areas.',
+
+    20: 'This large forest in New Jersey is home to the legendary Jersey Devil, a creature said to be born of a curse. For centuries, locals have reported strange sounds, sightings of the devil, and eerie lights among the trees.',
+  };
+
   constructor() {}
 
   getHauntedHouses() {
@@ -207,5 +249,9 @@ export class HauntedHouseService {
 
   getHauntedHouse(id: number) {
     return this.hauntedHouses.find((house) => house.id === id);
+  }
+
+  getHauntedHouseHistory(id: number): string | undefined {
+    return this.hauntedHouseHistory[id];
   }
 }
