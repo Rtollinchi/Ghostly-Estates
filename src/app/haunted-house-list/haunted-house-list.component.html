@@ -1,8 +1,11 @@
 <div *ngFor="let house of hauntedHouses" class="haunted-house">
+  <a [routerLink]="['/house', house.id]" class="house-link">
   <h3>{{ house.name }}</h3>
+</a>
   <p>{{ house.location.city }}</p>
   <p>{{ house.location.state }}</p>
   <p>{{ house.location.zip }}</p>
   <p>{{ house.description }}</p>
   <img [src]="house.imageUrl" alt="{{ house.name }}" />
+
 </div>

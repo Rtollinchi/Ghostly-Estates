@@ -1,0 +1,9 @@
+<div *ngIf="hauntedHouse">
+  <h2>{{ hauntedHouse.name }}</h2>
+  <p>
+    Location: {{ hauntedHouse.location.city }},
+    {{ hauntedHouse.location.state }} {{ hauntedHouse.location.zip }}
+  </p>
+  <p>{{ hauntedHouse.description }}</p>
+  <img [src]="hauntedHouse.imageUrl" alt="{{ hauntedHouse.name }}" />
+</div>
