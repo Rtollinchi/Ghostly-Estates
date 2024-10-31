@@ -254,4 +254,8 @@ export class HauntedHouseService {
   getHauntedHouseHistory(id: number): string | undefined {
     return this.hauntedHouseHistory[id];
   }
+
+  addHauntedHouse(house: HauntedHouse): void {
+    this.hauntedHouses.push(house);
+  }
 }
