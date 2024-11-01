@@ -1,0 +1,49 @@
+<div *ngIf="hauntedHouse">
+  <h2>Edit Haunted House</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label>
+      Name:
+      <input type="text" [(ngModel)]="hauntedHouse.name" name="name" required />
+    </label>
+
+    <label>
+      City:
+      <input type="text" [(ngModel)]="hauntedHouse.location.city" name="city" />
+    </label>
+
+    <label>
+      State:
+      <input
+        type="text"
+        [(ngModel)]="hauntedHouse.location.state"
+        name="state"
+      />
+    </label>
+
+    <label>
+      Zip:
+      <input type="text" [(ngModel)]="hauntedHouse.location.zip" name="zip" />
+    </label>
+
+    <label>
+      Description:
+      <textarea
+        [(ngModel)]="hauntedHouse.description"
+        name="description"
+      ></textarea>
+    </label>
+
+    <label>
+      Image URL:
+      <input type="text" [(ngModel)]="hauntedHouse.imageUrl" name="imageUrl" />
+    </label>
+
+    <label>
+      Historical Details:
+      <textarea [(ngModel)]="hauntedHouse.history" name="history"></textarea>
+    </label>
+
+    <button type="submit">Save</button>
+    <button routerLink="/">Back to Details</button>
+  </form>
+</div>

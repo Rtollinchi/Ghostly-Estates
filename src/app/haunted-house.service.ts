@@ -263,4 +263,18 @@ export class HauntedHouseService {
   addHauntedHouseHistory(id: number, historyDetails: string) {
     this.hauntedHouseHistory[id] = historyDetails;
   }
+
+  updateHauntedHouse(updatedHouse: HauntedHouse): void {
+    const index = this.hauntedHouses.findIndex(
+      (house) => house.id === updatedHouse.id
+    );
+
+    if (index !== -1) {
+      this.hauntedHouses[index] = updatedHouse;
+    }
+
+    if (updatedHouse.history) {
+      this.addHauntedHouseHistory(updatedHouse.id, updatedHouse.history);
+    }
+  }
 }

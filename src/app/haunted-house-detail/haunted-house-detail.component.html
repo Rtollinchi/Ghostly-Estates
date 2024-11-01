@@ -10,5 +10,6 @@
     <h3>Historical Details</h3>
     <p>{{ houseHistory || hauntedHouse.history }}</p>
   </div>
+  <button [routerLink]="['/edit', hauntedHouse.id]">Edit</button>
   <button routerLink="/">Back to List</button>
 </div>
