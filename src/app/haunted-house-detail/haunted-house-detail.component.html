@@ -6,9 +6,9 @@
   </p>
   <p></p>
   <img [src]="hauntedHouse.imageUrl" alt="{{ hauntedHouse.name }}" />
-  <div *ngIf="houseHistory">
+  <div *ngIf="houseHistory || hauntedHouse.history">
     <h3>Historical Details</h3>
-    <p>{{ houseHistory }}</p>
+    <p>{{ houseHistory || hauntedHouse.history }}</p>
   </div>
   <button routerLink="/">Back to List</button>
 </div>

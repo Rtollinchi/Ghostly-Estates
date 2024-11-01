@@ -53,6 +53,13 @@
     required
   />
 
+  <label for="history">Historic Details:</label>
+  <textarea
+    id="history"
+    [(ngModel)]="newHouse.history"
+    name="history"
+  ></textarea>
+
   <button type="submit">Add Haunted House</button>
   <button routerLink="/">Back to List</button>
 </form>

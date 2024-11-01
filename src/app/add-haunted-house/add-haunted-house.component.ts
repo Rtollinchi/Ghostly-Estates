@@ -23,6 +23,7 @@ export class AddHauntedHouseComponent {
     },
     description: '',
     imageUrl: '',
+    history: '',
   };
 
   onSubmit() {
@@ -43,6 +44,7 @@ export class AddHauntedHouseComponent {
       },
       description: '',
       imageUrl: '',
+      history: '',
     };
   }
 }

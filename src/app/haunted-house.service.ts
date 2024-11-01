@@ -10,6 +10,7 @@ export interface HauntedHouse {
   };
   description: string;
   imageUrl: string;
+  history?: string;
 }
 
 @Injectable({
@@ -168,7 +169,7 @@ export class HauntedHouseService {
       description:
         'A historic jail where visitors report encounters with ghostly former inmates.',
       imageUrl:
-        'https://ghostcitytours.com/cdn-cgi/image/quality=60,f=auto,w=1110,h=634/images/charleston/haunted-places/charleston-jail/haunted-charleston-jail.jpg',
+        'https://res.cloudinary.com/simpleview/image/upload/c_fill,w_1024,h_576,q_auto:eco,f_auto,g_auto/crm/charleston/0Wk1WBkK_221FA2D5-C81D-46F5-8666FF20AD751A60_f472e6be-ae7b-49fe-a78c6dd82d4a8f65.jpg',
     },
     {
       id: 18,
@@ -257,5 +258,9 @@ export class HauntedHouseService {
 
   addHauntedHouse(house: HauntedHouse): void {
     this.hauntedHouses.push(house);
+  }
+
+  addHauntedHouseHistory(id: number, historyDetails: string) {
+    this.hauntedHouseHistory[id] = historyDetails;
   }
 }

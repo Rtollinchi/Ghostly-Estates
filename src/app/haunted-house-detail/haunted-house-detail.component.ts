@@ -26,5 +26,6 @@ export class HauntedHouseDetailComponent implements OnInit {
     this.hauntedHouse = this.hauntedHouseService.getHauntedHouse(id);
     console.log('Fetched Haunted House:', this.hauntedHouse);
     this.houseHistory = this.hauntedHouseService.getHauntedHouseHistory(id);
+
   }
 }
