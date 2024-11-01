@@ -277,4 +277,8 @@ export class HauntedHouseService {
       this.addHauntedHouseHistory(updatedHouse.id, updatedHouse.history);
     }
   }
+
+  deleteHauntedHouse(id: number): void {
+    this.hauntedHouses = this.hauntedHouses.filter((house) => house.id !== id);
+  }
 }

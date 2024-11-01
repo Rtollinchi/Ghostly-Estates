@@ -36,4 +36,11 @@ export class EditHauntedHouseComponent implements OnInit {
       this.router.navigate(['/house', this.hauntedHouse.id]);
     }
   }
+
+  onDelete(): void {
+    if (this.hauntedHouse) {
+      this.hauntedHouseService.deleteHauntedHouse(this.hauntedHouse.id);
+      this.router.navigate(['/']);
+    }
+  }
 }
