@@ -1,27 +1,37 @@
-# HauntedHouseFinder
+# HouseOfHauntedHouses
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+Haunted House Finder is an Angular application that allows users to explore and add haunted houses across various locations. Users can view details, historical background, and edit or delete entries to keep the list up-to-date.
 
-## Development server
+# Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Clone the Repository:
 
-## Code scaffolding
+git clone https://github.com/Rtollinchi/house-of-haunted-houses.git
+cd house-of-haunted-houses
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Install Dependencies
 
-## Build
+npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. RUn the Application
 
-## Running unit tests
+ng serve
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Open the Browser: Visit http://localhost:4200
 
-## Running end-to-end tests
+# Usage
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Browse and Explore: Navigate through the list of haunted houses and click on any entry for details.
 
-## Further help
+Add New Entries: Use the "Add Haunted House" button to add a new haunted house with name, location, description, image, and history.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Edit or Delete:  In the detailed view, choose to edit or delete entries as needed.
+
+# Technologies
+
+Angular
+
+Typescript
+
+Bootstrap
+

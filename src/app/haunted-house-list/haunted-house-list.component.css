@@ -1,0 +1,7 @@
+.card-img-top {
+  border: 1px solid #ccc;
+  transition: transform 0.3s;
+}
+.card-img-top:hover {
+  transform: scale(1.05);
+}
