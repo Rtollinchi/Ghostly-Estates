@@ -13,7 +13,7 @@ cd house-of-haunted-houses
 
 npm install
 
-3. RUn the Application
+3. Run the Application
 
 ng serve
 
@@ -25,7 +25,7 @@ Browse and Explore: Navigate through the list of haunted houses and click on any
 
 Add New Entries: Use the "Add Haunted House" button to add a new haunted house with name, location, description, image, and history.
 
-Edit or Delete:  In the detailed view, choose to edit or delete entries as needed.
+Edit or Delete: In the detailed view, choose to edit or delete entries as needed.
 
 # Technologies
 
@@ -34,4 +34,3 @@ Angular
 Typescript
 
 Bootstrap
-

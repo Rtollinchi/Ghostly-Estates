@@ -24,6 +24,8 @@ export class AddHauntedHouseComponent {
     description: '',
     imageUrl: '',
     history: '',
+    price: 0,
+    status: 'For Sale' as 'For Sale' | 'Under Contract' | 'Sold',
   };
 
   onSubmit() {
@@ -45,6 +47,8 @@ export class AddHauntedHouseComponent {
       description: '',
       imageUrl: '',
       history: '',
+      price: 0,
+      status: 'For Sale' as 'For Sale' | 'Under Contract' | 'Sold',
     };
   }
 }

@@ -29,7 +29,7 @@ export class HauntedHouseService {
       imageUrl:
         'https://ei.marketwatch.com/Multimedia/2016/06/29/Photos/ZH/MW-EQ389_amityv_20160629095319_ZH.jpg?uuid=d64cff2a-3e00-11e6-89f4-0015c588dfa6',
       price: 925000,
-      status: 'For Sale'
+      status: 'For Sale',
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ export class HauntedHouseService {
         "Inspiration for Stephen King's 'The Shining,' famous for ghostly figures, mysterious piano music, and haunted halls.",
       imageUrl:
         'https://live.staticflickr.com/3687/9556931965_5729b37f18_b.jpg',
-        status: 'Sold'
+      status: 'Sold',
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ export class HauntedHouseService {
         'A labyrinth of staircases and doors to nowhere, built by Sarah Winchester to appease the spirits.',
       imageUrl:
         'https://bunny-usga.b-cdn.net/wp-content/uploads/2022/02/The-Winchester-House-Is-Haunted.png',
-        status: 'Under Contract'
+      status: 'Under Contract',
     },
     {
       id: 4,
@@ -59,8 +59,8 @@ export class HauntedHouseService {
         'A historic plantation rumored to be haunted by the ghost of Chloe, a former slave.',
       imageUrl:
         'https://images.squarespace-cdn.com/content/v1/58d00ac2db29d6778265a2e4/1492699335772-5DLJY7WWZ8ZHM6K7QGLZ/image-asset.jpeg',
-        price: 1200000,
-        status: 'For Sale'
+      price: 1200000,
+      status: 'For Sale',
     },
     {
       id: 5,
@@ -70,6 +70,8 @@ export class HauntedHouseService {
         'A historic prison known for eerie sounds and ghost sightings in its empty corridors.',
       imageUrl:
         'https://adventure.com/wp-content/uploads/2017/06/Eastern-State-Penitentiary_Susan-Portnoy-04-1180x787.jpg',
+      status: 'For Sale',
+      price: 6000000,
     },
     {
       id: 6,
@@ -79,6 +81,7 @@ export class HauntedHouseService {
         'A retired ocean liner known for ghostly encounters, including former crew members and passengers.',
       imageUrl:
         'https://www.syfy.com/sites/syfy/files/2019/04/gettyimages-51832519.jpg',
+      status: 'Sold',
     },
     {
       id: 7,
@@ -88,6 +91,8 @@ export class HauntedHouseService {
         'A former tuberculosis hospital, often described as one of the most haunted locations in the United States.',
       imageUrl:
         'https://images.squarespace-cdn.com/content/v1/58d00ac2db29d6778265a2e4/1508958394092-WL3QNSQH5A6ZI1TUFY74/image-asset.jpeg',
+      status: 'For Sale',
+      price: 5000000,
     },
     {
       id: 8,
@@ -97,6 +102,7 @@ export class HauntedHouseService {
         'The site of the Bell Witch legend, known for tales of poltergeist activity dating back to the 1800s.',
       imageUrl:
         'https://www.theleafchronicle.com/gcdn/-mm-/f4b967ec3342a862520536ea7cb75c568be85527/c=0-45-2182-2954/local/-/media/2015/10/20/USATODAY/USATODAY/635809469268590638-102015bell-witch-cave.jpg?width=660&height=880&fit=crop&format=pjpg&auto=webp',
+      status: 'Sold',
     },
     {
       id: 9,
@@ -106,6 +112,8 @@ export class HauntedHouseService {
         'A historic mansion with a tragic family history, believed to be haunted by the Lemp family members.',
       imageUrl:
         'https://www.usatoday.com/gcdn/presto/2020/10/27/USAT/39709cd9-5b2e-4b5e-9e04-ee4de2ef7012-Lemp_Mansion.jpg?width=1320&height=1138&fit=crop&format=pjpg&auto=webp',
+      status: 'For Sale',
+      price: 3000000,
     },
     {
       id: 10,
@@ -115,6 +123,8 @@ export class HauntedHouseService {
         "The scene of the infamous axe murders, now rumored to be haunted by Lizzie Borden's parents.",
       imageUrl:
         'https://lizzie-borden.com/wp-content/themes/lizzieborden/img/lizzie_borden_house_main.jpg',
+      status: 'For Sale',
+      price: 800000,
     },
     {
       id: 11,
@@ -124,6 +134,8 @@ export class HauntedHouseService {
         'A historic lighthouse known for ghostly figures and mysterious sounds attributed to past lighthouse keepers and their families.',
       imageUrl:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHfUiJOkvjNN6-SGaivtypJatpuLzdsv9fEw&s',
+      status: 'For Sale',
+      price: 2250000,
     },
     {
       id: 12,
@@ -133,6 +145,8 @@ export class HauntedHouseService {
         'Scene of an unsolved 1912 murder, where ghostly children and eerie sounds are reported to this day.',
       imageUrl:
         'https://bunny-usga.b-cdn.net/wp-content/themes/kadence/assets/images/murderhouse/Villisca-Ax-Murder-01.png',
+      status: 'For Sale',
+      price: 750000,
     },
     {
       id: 13,
@@ -142,6 +156,8 @@ export class HauntedHouseService {
         'Civil War site where ghostly soldiers and footsteps are reported by visitors and staff.',
       imageUrl:
         'https://farnsworthhouseinn.com/wp-content/uploads/2024/02/20240120_181141-1920x1440.jpg',
+      status: 'For Sale',
+      price: 3999999,
     },
     {
       id: 14,
@@ -151,6 +167,7 @@ export class HauntedHouseService {
         'Famous for its paranormal activity, with sightings of past residents and strange happenings.',
       imageUrl:
         'https://www.whaleyhousesandiego.com/wp-content/uploads/2022/05/haunted-bedroom.jpg',
+      status: 'Under Contract',
     },
     {
       id: 15,
@@ -160,6 +177,8 @@ export class HauntedHouseService {
         'Known for ghostly apparitions, including a woman in white and phantom cars that vanish.',
       imageUrl:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTDip-79eQxT3UFA7NfmdoXiaFxnNgIWLAVeTmcJkplw0w-57xuPQ6ELpzSYETTpJz2R4&usqp=CAU',
+      status: 'For Sale',
+      price: 8000000,
     },
     {
       id: 16,
@@ -169,6 +188,7 @@ export class HauntedHouseService {
         'Home to Madame LaLaurie, known for the disturbing events and hauntings that followed her crimes.',
       imageUrl:
         'https://img.rezdy.com/PRODUCT_IMAGE/38117/LaLaurie_Mansion_at_Night_650_Rezdy_lg.jpg',
+      status: 'Sold',
     },
     {
       id: 17,
@@ -178,6 +198,8 @@ export class HauntedHouseService {
         'A historic jail where visitors report encounters with ghostly former inmates.',
       imageUrl:
         'https://res.cloudinary.com/simpleview/image/upload/c_fill,w_1024,h_576,q_auto:eco,f_auto,g_auto/crm/charleston/0Wk1WBkK_221FA2D5-C81D-46F5-8666FF20AD751A60_f472e6be-ae7b-49fe-a78c6dd82d4a8f65.jpg',
+      status: 'For Sale',
+      price: 22000000,
     },
     {
       id: 18,
@@ -187,6 +209,8 @@ export class HauntedHouseService {
         "Known as America's most haunted hotel, with sightings of ghostly former patients and staff.",
       imageUrl:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk9JvNbr8VeWxr1RroHJU0CFzwM8xUc8IyFA&s',
+      status: 'For Sale',
+      price: 5000000,
     },
     {
       id: 19,
@@ -196,6 +220,8 @@ export class HauntedHouseService {
         'A former prison where visitors report ghostly figures and strange noises from the cells.',
       imageUrl:
         'https://npiweb.com/Portals/0/Blog/Article%20Images/Haunted%20Places/Ohio%20Reformatory/Ohio_State_Reformatory-10.jpg?ver=olCbrRCKegJayDzpNKwz_A%3D%3D',
+      status: 'For Sale',
+      price: 12000000,
     },
     {
       id: 20,
@@ -205,6 +231,8 @@ export class HauntedHouseService {
         'A forest steeped in legend, known for the sightings of the Jersey Devil.',
       imageUrl:
         'https://southjerseytrails.files.wordpress.com/2017/03/weymouth04.jpg',
+      status: 'For Sale',
+      price: 750000,
     },
   ];
 
