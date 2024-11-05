@@ -1,15 +1,15 @@
 <div *ngIf="hauntedHouse">
   <h2>Edit Haunted House</h2>
   <form (ngSubmit)="onSubmit()">
-    <label>
-      Name:
+    <div class="mb-3">
+      <label for="name" class="form-label"> Name:</label>
       <input type="text" [(ngModel)]="hauntedHouse.name" name="name" required />
-    </label>
+    </div>
 
-    <label>
-      City:
+    <div class="'mb-3">
+      <label for="city" class="form-label"> City:</label>
       <input type="text" [(ngModel)]="hauntedHouse.location.city" name="city" />
-    </label>
+    </div>
 
     <label>
       State:
@@ -44,7 +44,7 @@
     </label>
 
     <button type="submit">Save</button>
-    <button (click)="(onDelete())">Delete</button>
+    <button (click)="onDelete()">Delete</button>
     <button routerLink="/">Back to Details</button>
   </form>
 </div>
