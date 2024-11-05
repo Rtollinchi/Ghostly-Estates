@@ -1,50 +1,90 @@
-<div *ngIf="hauntedHouse">
-  <h2>Edit Haunted House</h2>
-  <form (ngSubmit)="onSubmit()">
+<div *ngIf="hauntedHouse" class="container mt-5">
+  <h2 class="text-center mb-4">Edit Haunted House</h2>
+  <form (ngSubmit)="onSubmit()" class="bg-light p-4 rounded shadow-sm">
     <div class="mb-3">
-      <label for="name" class="form-label"> Name:</label>
-      <input type="text" [(ngModel)]="hauntedHouse.name" name="name" required />
-    </div>
-
-    <div class="'mb-3">
-      <label for="city" class="form-label"> City:</label>
-      <input type="text" [(ngModel)]="hauntedHouse.location.city" name="city" />
-    </div>
-
-    <label>
-      State:
+      <label for="name" class="form-label">Name:</label>
       <input
         type="text"
-        [(ngModel)]="hauntedHouse.location.state"
-        name="state"
+        id="name"
+        [(ngModel)]="hauntedHouse.name"
+        name="name"
+        class="form-control"
+        required
       />
-    </label>
+    </div>
 
-    <label>
-      Zip:
-      <input type="text" [(ngModel)]="hauntedHouse.location.zip" name="zip" />
-    </label>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <label for="city" class="form-label">City:</label>
+        <input
+          type="text"
+          id="city"
+          [(ngModel)]="hauntedHouse.location.city"
+          name="city"
+          class="form-control"
+        />
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="state" class="form-label">State:</label>
+        <input
+          type="text"
+          id="state"
+          [(ngModel)]="hauntedHouse.location.state"
+          name="state"
+          class="form-control"
+        />
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="zip" class="form-label">Zip:</label>
+        <input
+          type="text"
+          id="zip"
+          [(ngModel)]="hauntedHouse.location.zip"
+          name="zip"
+          class="form-control"
+        />
+      </div>
+    </div>
 
-    <label>
-      Description:
+    <div class="mb-3">
+      <label for="description" class="form-label">Description:</label>
       <textarea
+        id="description"
         [(ngModel)]="hauntedHouse.description"
         name="description"
+        class="form-control"
       ></textarea>
-    </label>
+    </div>
 
-    <label>
-      Image URL:
-      <input type="text" [(ngModel)]="hauntedHouse.imageUrl" name="imageUrl" />
-    </label>
+    <div class="mb-3">
+      <label for="imageUrl" class="form-label">Image URL:</label>
+      <input
+        type="text"
+        id="imageUrl"
+        [(ngModel)]="hauntedHouse.imageUrl"
+        name="imageUrl"
+        class="form-control"
+      />
+    </div>
 
-    <label>
-      Historical Details:
-      <textarea [(ngModel)]="hauntedHouse.history" name="history"></textarea>
-    </label>
+    <div class="mb-3">
+      <label for="history" class="form-label">Historical Details:</label>
+      <textarea
+        id="history"
+        [(ngModel)]="hauntedHouse.history"
+        name="history"
+        class="form-control"
+      ></textarea>
+    </div>
 
-    <button type="submit">Save</button>
-    <button (click)="onDelete()">Delete</button>
-    <button routerLink="/">Back to Details</button>
+    <div class="d-flex justify-content-between mt-4">
+      <button type="submit" class="btn btn-warning">Save</button>
+      <button type="button" class="btn btn-danger" (click)="onDelete()">
+        Delete
+      </button>
+      <button type="button" routerLink="/" class="btn btn-secondary">
+        Back to Details
+      </button>
+    </div>
   </form>
 </div>

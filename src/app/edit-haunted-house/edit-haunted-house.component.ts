@@ -3,11 +3,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { HauntedHouseService, HauntedHouse } from '../haunted-house.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'edit-haunted-house',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './edit-haunted-house.component.html',
   styleUrl: './edit-haunted-house.component.css',
 })
