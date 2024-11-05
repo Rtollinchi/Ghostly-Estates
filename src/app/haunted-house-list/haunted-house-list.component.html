@@ -11,7 +11,13 @@
           class="card-img-top img-fluid"
         />
         <div class="card-body">
-          <h5 class="card-title">{{ house.name }}</h5>
+          <h3 class="card-title">{{ house.name }}</h3>
+          <p class="card-text" *ngIf="house.status === 'For Sale'">
+            {{ house.price | currency : "USD" : true }}
+          </p>
+          <p class="card-text" *ngIf="house.status !== 'For Sale'">
+            {{ house.status }}
+          </p>
           <p class="card-text">{{ house.description }}</p>
           <a [routerLink]="['/house', house.id]" class="btn btn-dark mt-2">
             View Details

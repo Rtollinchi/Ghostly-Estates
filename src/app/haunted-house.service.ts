@@ -11,6 +11,8 @@ export interface HauntedHouse {
   description: string;
   imageUrl: string;
   history?: string;
+  price?: number;
+  status?: 'For Sale' | 'Under Contract' | 'Sold';
 }
 
 @Injectable({
@@ -26,6 +28,8 @@ export class HauntedHouseService {
         'The infamous site of the 1974 DeFeo family murders, known for eerie apparitions reported by later residents.',
       imageUrl:
         'https://ei.marketwatch.com/Multimedia/2016/06/29/Photos/ZH/MW-EQ389_amityv_20160629095319_ZH.jpg?uuid=d64cff2a-3e00-11e6-89f4-0015c588dfa6',
+      price: 925000,
+      status: 'For Sale'
     },
     {
       id: 2,
@@ -35,6 +39,7 @@ export class HauntedHouseService {
         "Inspiration for Stephen King's 'The Shining,' famous for ghostly figures, mysterious piano music, and haunted halls.",
       imageUrl:
         'https://live.staticflickr.com/3687/9556931965_5729b37f18_b.jpg',
+        status: 'Sold'
     },
     {
       id: 3,
@@ -44,6 +49,7 @@ export class HauntedHouseService {
         'A labyrinth of staircases and doors to nowhere, built by Sarah Winchester to appease the spirits.',
       imageUrl:
         'https://bunny-usga.b-cdn.net/wp-content/uploads/2022/02/The-Winchester-House-Is-Haunted.png',
+        status: 'Under Contract'
     },
     {
       id: 4,
@@ -53,6 +59,8 @@ export class HauntedHouseService {
         'A historic plantation rumored to be haunted by the ghost of Chloe, a former slave.',
       imageUrl:
         'https://images.squarespace-cdn.com/content/v1/58d00ac2db29d6778265a2e4/1492699335772-5DLJY7WWZ8ZHM6K7QGLZ/image-asset.jpeg',
+        price: 1200000,
+        status: 'For Sale'
     },
     {
       id: 5,
