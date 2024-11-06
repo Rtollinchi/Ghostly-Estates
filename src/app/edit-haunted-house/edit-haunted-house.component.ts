@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './edit-haunted-house.component.css',
 })
 export class EditHauntedHouseComponent implements OnInit {
+  notificationMessage = '';
   hauntedHouse: HauntedHouse | undefined;
 
   constructor(
@@ -34,7 +35,10 @@ export class EditHauntedHouseComponent implements OnInit {
   onSubmit(): void {
     if (this.hauntedHouse) {
       this.hauntedHouseService.updateHauntedHouse(this.hauntedHouse);
-      this.router.navigate(['/house', this.hauntedHouse.id]);
+      this.notificationMessage = 'Haunted House updated successfully!';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setTimeout(() => (this.notificationMessage = ''), 3000);
+      // this.router.navigate(['/house', this.hauntedHouse.id]);
     }
   }
 

@@ -1,5 +1,10 @@
 <div *ngIf="hauntedHouse" class="container mt-5">
   <h2 class="text-center mb-4">Edit Haunted House</h2>
+
+  <div *ngIf="notificationMessage" class="alert alert-success">
+    {{ notificationMessage }}
+  </div>
+
   <form (ngSubmit)="onSubmit()" class="bg-light p-4 rounded shadow-sm">
     <div class="mb-3">
       <label for="name" class="form-label">Name:</label>
@@ -108,7 +113,7 @@
       <button type="button" class="btn btn-danger" (click)="onDelete()">
         Delete
       </button>
-      <button routerLink="'/house', house.id" class="btn btn-secondary">
+      <button [routerLink]="['/house', hauntedHouse.id]" class="btn btn-secondary">
         Back to Details
       </button>
     </div>
