@@ -26,7 +26,7 @@ export class AddHauntedHouseComponent {
     description: '',
     imageUrl: '',
     history: '',
-    price: 0,
+    price: undefined,
     status: 'For Sale' as 'For Sale' | 'Under Contract' | 'Sold',
   };
 
@@ -51,7 +51,7 @@ export class AddHauntedHouseComponent {
       description: '',
       imageUrl: '',
       history: '',
-      price: 0,
+      price: undefined,
       status: 'For Sale' as 'For Sale' | 'Under Contract' | 'Sold',
     };
   }

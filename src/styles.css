@@ -1,4 +1,58 @@
 body {
-  background: linear-gradient(to right, #1f1c2c, #928dab);
-  color: Black;
+  background: linear-gradient(to right, #928dab, #1f1c2c);
+  color: #a8a8a8;
+}
+
+.container {
+  color: #a8a8a8;
+}
+
+.heading-mystic-violet {
+  color: #9b59b6;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px #4c3271;
+  padding-bottom: 0.2rem;
+  border-bottom: 3px solid #e07848;
+  text-align: center;
+}
+
+.accent-rusty-orange {
+  color: #d35400;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #1f1d33;
+  color: #a8a8a8;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: #e07848;
+  border-color: #e07848;
+}
+.btn-warning {
+  background-color: #694ca8;
+  border-color: #694ca8;
+}
+.btn-danger:hover {
+  color: #000;
+}
+
+.btn-primary,
+.btn-warning {
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background-color: #5d4198;
+  border-color: #5d4198;
+}
+
+.btn-primary:hover {
+  background-color: #d0663f;
+  border-color: #d0663f;
+  color: #000;
 }

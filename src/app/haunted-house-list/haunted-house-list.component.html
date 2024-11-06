@@ -1,6 +1,6 @@
-<h1 class="text-center">Welcome to Ghostly Estates</h1>
+<h1 class="heading-mystic-violet text-center">Welcome to Ghostly Estates</h1>
 <div class="container mt-4">
-  <a routerLink="/add-house" class="btn btn-primary mb-3" >Add New House</a>
+  <a routerLink="/add-house" class="btn btn-primary mb-3">Add New House</a>
   <div class="row">
     <div
       *ngFor="let house of hauntedHouses"
@@ -14,14 +14,17 @@
         />
         <div class="card-body">
           <h3 class="card-title">{{ house.name }}</h3>
-          <p class="card-text" *ngIf="house.status === 'For Sale'">
+          <p
+            class="accent-rusty-orange card-text"
+            *ngIf="house.status === 'For Sale'"
+          >
             {{ house.price | currency : "USD" : true }}
           </p>
-          <p class="card-text" *ngIf="house.status !== 'For Sale'">
+          <p class="accent-rusty-orange card-text" *ngIf="house.status !== 'For Sale'">
             {{ house.status }}
           </p>
           <p class="card-text">{{ house.description }}</p>
-          <a [routerLink]="['/house', house.id]" class="btn btn-dark mt-2">
+          <a [routerLink]="['/house', house.id]" class="btn btn-primary mt-2">
             View Details
           </a>
         </div>

@@ -17,14 +17,16 @@
 
       <div *ngIf="houseHistory || hauntedHouse.history" class="mt-4">
         <h3>Historical Details</h3>
-        <p>{{ houseHistory || hauntedHouse.history }}</p>
+        <p>
+          {{ houseHistory || hauntedHouse.history }}
+        </p>
       </div>
 
       <div class="mt-4">
         <button
           [routerLink]="['/edit', hauntedHouse.id]"
           class="btn btn-warning"
-          style="margin-right: 20px;"
+          style="margin-right: 20px"
         >
           Edit
         </button>
