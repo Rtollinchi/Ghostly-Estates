@@ -35,7 +35,6 @@ export class AddHauntedHouseComponent {
     this.hauntedHouseService.addHauntedHouse(this.newHouse);
     this.notificationMessage = 'Haunted House added successfully!';
     setTimeout(() => (this.notificationMessage = ''), 3000);
-    console.log('New Haunted House:', this.newHouse);
     this.resetForm();
   }
 

@@ -22,17 +22,15 @@ export class HauntedHouseDetailComponent implements OnInit {
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    console.log('Fetched ID:', id);
+
     this.hauntedHouse = this.hauntedHouseService.getHauntedHouse(id);
-    console.log('Fetched Haunted House:', this.hauntedHouse);
+
     this.houseHistory = this.hauntedHouseService.getHauntedHouseHistory(id);
-    console.log('Historical Details:', this.houseHistory);
   }
 
   updateHauntedHouse(): void {
     if (this.hauntedHouse) {
       this.hauntedHouseService.updateHauntedHouse(this.hauntedHouse);
-      console.log('Updated Haunted House:', this.hauntedHouse);
     }
   }
 }

@@ -38,7 +38,6 @@ export class EditHauntedHouseComponent implements OnInit {
       this.notificationMessage = 'Haunted House updated successfully!';
       window.scrollTo({ top: 0, behavior: 'smooth' });
       setTimeout(() => (this.notificationMessage = ''), 3000);
-      // this.router.navigate(['/house', this.hauntedHouse.id]);
     }
   }
 
