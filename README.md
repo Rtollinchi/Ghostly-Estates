@@ -29,7 +29,7 @@ Edit or Delete: In the detailed view, choose to edit or delete entries as needed
 
 # Technologies
 
-AFront-end: Angular, TypeScript, Bootstrap, HTML, CSS
+Front-end: Angular, TypeScript, Bootstrap, HTML, CSS
 
 Back-end: Node.js, Express
 
