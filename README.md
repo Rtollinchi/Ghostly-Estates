@@ -29,8 +29,14 @@ Edit or Delete: In the detailed view, choose to edit or delete entries as needed
 
 # Technologies
 
-Angular
+AFront-end: Angular, TypeScript, Bootstrap, HTML, CSS
 
-Typescript
+Back-end: Node.js, Express
 
-Bootstrap
+Authentication: JWT, Auth0
+
+Deployment: Netlify, Render
+
+# Reflection
+
+Developing Ghostly Estates independently allowed me to deepen my skills in Angular and TypeScript, specifically in state management and building secure authentication workflows. Managing both frontend and backend components solo significantly enhanced my ability to troubleshoot complex issues, structure clean and maintainable codebases, and design user-centric interfaces. This experience also improved my skills in deploying and maintaining a live application independently.
